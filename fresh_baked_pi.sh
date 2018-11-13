@@ -2,12 +2,15 @@
 # see https://vicpimakers.ca/tutorials/raspbian/change-the-raspbian-root-password/
 # Is that a great idea? No. Does it simplify things? You betchya.
 
-# Second, reconfigure the keyboard with
+echo "First things first. Fix up that keyboard"
+wget https://raw.githubusercontent.com/TheLucasMoore/fresh_baked_pi/master/keyboard
+# This is essentially a reconfiguration of the keyboard with
 # $ dpkg-reconfigure keyboard-configuration
 # the BTC 9116URF one is 87 keys and seems to work just fine. Then run
-# $ service keyboard-setup restart
+echo "Restarting your keyboard configuration."
+service keyboard-setup restart
 
-echo "Let's upgrade your whole situation here."
+echo "Let's upgrade everything here and install some nice packages."
 sudo apt-get update && sudo apt-get upgrade;
 sudo apt-get install git zsh vim tmux;
 
