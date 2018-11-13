@@ -30,7 +30,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # set zshrc up nice and pretty
 wget https://raw.githubusercontent.com/TheLucasMoore/fresh_baked_pi/master/zshrc ~/.zshrc
-source ~/.zshrc
-
 echo "################### Step Three ###################"
+source ~/.zshrc
 echo "Ok, things are pretty well set up on this machine now."
+echo "I left all the files for you to inspect what ran. Check 'em out with $ ls"
