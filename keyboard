@@ -1,0 +1,10 @@
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="btc9116u"
+XKBLAYOUT="us"
+XKBVARIANT=""
+XKBOPTIONS="grp:alt_shift_toggle"
+
+BACKSPACE="guess"
